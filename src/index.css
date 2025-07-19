@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(155, 25%, 20%);
+  --muted: hsl(45, 50%, 96%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(155, 25%, 20%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(155, 25%, 20%);
+  --border: hsl(20, 8%, 88%);
+  --input: hsl(20, 8%, 88%);
+  --primary: hsl(27, 87%, 67%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(45, 86%, 70%);
+  --secondary-foreground: hsl(155, 25%, 20%);
+  --accent: hsl(45, 86%, 70%);
+  --accent-foreground: hsl(155, 25%, 20%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(27, 87%, 67%);
+  --radius: 0.75rem;
+  
+  /* Custom Tiny Haven colors */
+  --th-primary: hsl(27, 87%, 67%);
+  --th-primary-dark: hsl(27, 87%, 60%);
+  --th-secondary: hsl(45, 86%, 70%);
+  --th-coral: hsl(11, 83%, 61%);
+  --th-green: hsl(145, 63%, 42%);
+  --th-blue: hsl(204, 70%, 53%);
+  --th-slate: hsl(210, 29%, 24%);
+  --th-warm-gray: hsl(200, 20%, 94%);
+}
+
+.dark {
+  --background: hsl(210, 29%, 24%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(210, 29%, 16%);
+  --muted-foreground: hsl(210, 10%, 64%);
+  --popover: hsl(210, 29%, 24%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(210, 29%, 24%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(210, 29%, 16%);
+  --input: hsl(210, 29%, 16%);
+  --primary: hsl(27, 87%, 67%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 29%, 16%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(210, 29%, 16%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(210, 29%, 83%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-th-primary {
+    color: var(--th-primary);
+  }
+  
+  .text-th-primary-dark {
+    color: var(--th-primary-dark);
+  }
+  
+  .text-th-secondary {
+    color: var(--th-secondary);
+  }
+  
+  .text-th-coral {
+    color: var(--th-coral);
+  }
+  
+  .text-th-green {
+    color: var(--th-green);
+  }
+  
+  .text-th-blue {
+    color: var(--th-blue);
+  }
+  
+  .text-th-slate {
+    color: var(--th-slate);
+  }
+  
+  .bg-th-primary {
+    background-color: var(--th-primary);
+  }
+  
+  .bg-th-primary-dark {
+    background-color: var(--th-primary-dark);
+  }
+  
+  .bg-th-secondary {
+    background-color: var(--th-secondary);
+  }
+  
+  .bg-th-coral {
+    background-color: var(--th-coral);
+  }
+  
+  .bg-th-green {
+    background-color: var(--th-green);
+  }
+  
+  .bg-th-blue {
+    background-color: var(--th-blue);
+  }
+  
+  .bg-th-slate {
+    background-color: var(--th-slate);
+  }
+  
+  .bg-th-warm-gray {
+    background-color: var(--th-warm-gray);
+  }
+  
+  .border-th-primary {
+    border-color: var(--th-primary);
+  }
+  
+  .border-th-secondary {
+    border-color: var(--th-secondary);
+  }
+  
+  .border-th-coral {
+    border-color: var(--th-coral);
+  }
+  
+  .border-th-green {
+    border-color: var(--th-green);
+  }
+  
+  .border-th-blue {
+    border-color: var(--th-blue);
+  }
+}
